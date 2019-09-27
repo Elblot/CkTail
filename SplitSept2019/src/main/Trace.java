@@ -33,7 +33,6 @@ public class Trace {
 				for(int j = 0; j < regex.getPatterns().size(); j++) {
 					Matcher m = regex.getPatterns().get(j).matcher(line);
 					if(m.find()) {
-						//System.out.println("pass");
 						seq.add(new Event(line, m));
 						line = br.readLine();
 						continue outside;
@@ -52,6 +51,10 @@ public class Trace {
 		}
 	}
 	
+	public Trace subTrace(int begin, int end) {
+		return new Trace(new ArrayList<Event>(seq.subList(begin, end)));
+	}
+	
 	public String toString() {
 		return Arrays.deepToString(seq.toArray());
 	}
@@ -62,6 +65,23 @@ public class Trace {
 			res = res + e.debug() + ";" ;
 		}
 		return res;
+	}
+	
+	public boolean complete(String comp) {
+		int nbReq=0;
+		int nbResp=0;
+		for (int i = 0; i < seq.size(); i++) {
+			Event e = getEvent(i);
+			if (e.getFrom().equals(comp) || e.getTo().equals(comp)) {
+				if (e.isReq()){
+					nbReq++;
+				}
+				else {
+					nbResp++;
+				}
+			}
+		}
+		return nbReq == nbResp;
 	}
 	
 	public void writeTrace(File file) {
@@ -93,6 +113,10 @@ public class Trace {
 	
 	public Event getEvent(int index) {
 		return seq.get(index);
+	}
+	
+	public int indexOf(Event e) {
+		return seq.indexOf(e);
 	}
 	
 	public Event lastReq(String comp) {

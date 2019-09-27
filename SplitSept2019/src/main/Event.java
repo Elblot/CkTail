@@ -24,8 +24,6 @@ public class Event {
 		int n = 1;
 		try {
 		while(m.group("param" + n) != null) {
-			//System.out.println(n);
-			//System.out.println(m.group("param" + n));
 			params.add(m.group("param" + n));
 			n++;
 		}
@@ -82,7 +80,7 @@ public class Event {
 	
 	public String toString() {
 		String res = label + "(";
-		res = res + "date=" + date + ";";//tmp
+		res = res + "date=" + date + ";";//for debug only
 		for (String param: params) {
 			res = res + param + ";";
 		}
@@ -100,6 +98,24 @@ public class Event {
 		return res;
 	}
 	
+	/*public boolean dataSimilarity(Event ai) {
+		ArrayList<String> paramsi = ai.getparams();
+		ArrayList<String> paramsj = this.getparams();
+		first:
+		for (String parami: paramsi) {
+			if (!(parami.contains(from) || parami.contains(to))) {
+				for (String paramj: paramsj) {
+					if (paramj.equals(parami)) {
+						continue first;
+					}
+				}
+				return false;
+			}
+		}
+		return true;
+	}*/
+	
+/* original */
 	public boolean dataSimilarity(Event ai) {
 		ArrayList<String> paramsi = ai.getparams();
 		ArrayList<String> paramsj = this.getparams();
@@ -107,7 +123,7 @@ public class Event {
 			if (!(parami.contains(from) || parami.contains(to))) {
 				for (String paramj: paramsj) {
 					if (paramj.equals(parami)) {
-						System.out.println("match :" + parami);
+						//System.out.println("match :" + parami);
 						return true;
 					}
 				}

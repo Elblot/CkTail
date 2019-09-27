@@ -24,16 +24,7 @@ public class MapperOptions {
 		    if(timerMode) {
 		    	Main.timerMode = true;
 		    }
-		    
-		   /* boolean selec = line.hasOption("selec");
-		    if(selec) {
-		    	Main.selec = true;
-		    }*/
-		    
-		    /*boolean trace = line.hasOption("arg");
-		    if(trace) {
-		    	Main.trace = true;
-		    }*/
+
 	    
 	    }catch(Exception e) {
 	    	System.out.println("Usage : Main -i <input> -r <regex> -o <output>\n"
@@ -42,8 +33,6 @@ public class MapperOptions {
 	    			+ "-o/-output : name of the output directory\n"
 	    			+ "Options :\n"
 	    			+ "-t\tshow the duration of each step of the program\n"
-	    			//+ "-s\twrite non-matched lines on an other file\n"
-	    			//+ "-a\t remove the value of every arg on each line\n"
 	    			);
 	    	System.exit(1);}
 	}
@@ -81,20 +70,7 @@ public class MapperOptions {
 				.argName("output")
 				.required(true)
 				.build();
-	    
-	    /*final Option selecOption = Option.builder("s") 
-	            .longOpt("selec") 
-	            .desc("write non-matched files in an other file") 
-	            .hasArg(false) 
-	            .required(false) 
-	            .build();
-	    
-	    final Option traceOption = Option.builder("a") 
-	            .longOpt("arg") 
-	            .desc("remove the value of every arg on each line") 
-	            .hasArg(false) 
-	            .required(false)
-	            .build();*/
+
 	
 	    final Options options = new Options();
 	
@@ -102,9 +78,6 @@ public class MapperOptions {
 	    options.addOption(regexOption);
 	    options.addOption(timerFileOption);
 	    options.addOption(outputOption);
-	    //options.addOption(selecOption);
-	    //options.addOption(traceOption);
-
 	
 	    return options;
 	}

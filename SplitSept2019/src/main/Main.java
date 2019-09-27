@@ -16,7 +16,10 @@ public class Main {
 	public static HashMap<String, Double> means;
 	public static HashSet<Trace> traces;
 	public static Regex regex;
-	public static double fact = 2.0;
+	public static Trace logOrigin;
+	public static double fact = 20.0;
+	
+	public static Dependency Dep;
 
 	public static void main(String[] args) {
 		//System.out.println("begin");
@@ -29,15 +32,19 @@ public class Main {
 			System.exit(3);
 		}
 		traces = getTraces();
-		//System.out.println(traces.toString());
 		System.out.println("traces built");
-		for (Trace trace: traces) {
+		Dep = new Dependency();
+		for (Trace trace: traces) { //we suppose that their is only one log
+			logOrigin = trace;
 			T.addAll(Split(trace));
 		}
 		System.out.println("split done");
 		int i = 1;
 		File dir = new File(output);
 		dir.mkdir();
+		//
+		//TODO getDependencies(T);
+		//
 		try {
 			for(Trace t: T) {
 				File f = new File(output+"/"+i);
@@ -47,6 +54,10 @@ public class Main {
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
+		
+		System.out.println("Dep : " + Dep.toString());
+		
+		System.out.println("DAG :\n " + Dep.getDag());
 		System.out.println("Files generated");
 	}
 
@@ -68,6 +79,8 @@ public class Main {
 
 	// process on already built Trace
 	public static ArrayList<Trace> Split(Trace trace){
+		//System.out.println("new trace:\n");
+
 		ArrayList<Trace> T = new ArrayList<Trace>();
 		int i = 1;
 		Event aj = trace.getEvent(i - 1);
@@ -88,10 +101,10 @@ public class Main {
 		SR.add(L);
 		SA.add(aj.getFrom());
 		SA.add(aj.getTo());
+		Dep.extend(L, tprime);
 		i++;
 		eventAnalysis:
 			while (i <= trace.size()) {
-				//System.out.println(SR);
 				aj = trace.getEvent(i - 1);
 				if (aj.isReq()) {
 					//case 2
@@ -99,11 +112,11 @@ public class Main {
 						if (SA.contains(aj.getFrom()) &&
 								!LReq.isEmpty() && aj.getFrom().equals(LReq.get(LReq.size() - 1).getTo()) && //verif LReq non vide
 								!pendingRequest(aj, SR)) {
-							//System.out.println("case 2 :" + aj.debug());
 							tprime.addEvent(aj);
 							LReq.add(aj);
 							SA.add(aj.getFrom());
 							SA.add(aj.getTo());
+							Dep.extend(LReq, tprime);
 							i++;
 							continue eventAnalysis;								
 						}
@@ -115,10 +128,11 @@ public class Main {
 						if(!(!SA.contains(aj.getFrom()) ||
 								(!LReq.isEmpty() && aj.getFrom().equals(LReq.get(LReq.size() - 1).getTo())) ||
 								pendingRequest(aj, SR))) {
+
 							break;
 						}
 						if(c==SR.size()) {
-							//System.out.println("case 3 :" + aj.debug());
+							//System.out.println("case 3:" + aj.getDate(regex).toString());
 							tprimeprime.addEvent(aj);
 							i++;
 							continue eventAnalysis;	
@@ -137,22 +151,21 @@ public class Main {
 					c = 0;
 					for (ArrayList<Event> LReq: SR) {	
 						c++;
-						//System.out.println("case 5 :" + aj.debug());
 						if(!(SA.contains(aj.getFrom()) ||
 								aj.getFrom().equals(LReq.get(LReq.size() - 1).getTo()) ||
 								pendingRequest(aj, SR))) {
 							break;
 						}
 						if(c==SR.size()) {
-							//System.out.println("pass case 5");
-							if (isContinuation(tprime, aj)) {
+							int end = logOrigin.indexOf(aj);
+							if (isContinuation(tprime, aj, logOrigin.subTrace(calc(end), end+1))) {
 								tprime.addEvent(aj);
-								//LReq.add(aj);
 								ArrayList<Event> LR = new ArrayList<Event>();
 								LR.add(aj);
 								SR.add(LR);
 								SA.add(aj.getFrom());
 								SA.add(aj.getTo());
+								Dep.extend(LR, tprime);
 							}
 							else {
 								tprimeprime.addEvent(aj);
@@ -165,23 +178,15 @@ public class Main {
 				}
 				else {
 					//case 1
-					//System.out.println("isResp");
 					for (ArrayList<Event> LReq: SR) {	
-						/*System.out.println(aj.getFrom() + " = " + LReq.get(LReq.size() - 1).getTo());
-						System.out.println(aj.getTo() + " = " + LReq.get(LReq.size() - 1).getFrom());
-						System.out.println("pending ? :" + pendingRequest(aj, SR));*/
 						if(!LReq.isEmpty() && aj.getFrom().equals(LReq.get(LReq.size() - 1).getTo()) &&
 								aj.getTo().equals(LReq.get(LReq.size() - 1).getFrom())) {
-							//System.out.println("case 1 :" + aj.debug());
-							//System.out.println("yes");
 							tprime.addEvent(aj);
 							LReq.remove(LReq.size() - 1);
 							i++;
 							continue eventAnalysis;	
 						}
 					}
-					//System.out.println("no");
-					//System.out.println("case 0 :" + aj.debug());
 					tprimeprime.addEvent(aj);
 					i++;
 				}
@@ -205,6 +210,34 @@ public class Main {
 		return T;
 	}
 
+	public static int calc(int end) {
+		//System.out.println("other :" + logOrigin.getEvent(end) + "\n");
+		int res = end;
+		String comp = logOrigin.getEvent(end).getFrom();
+		//ArrayList<Event> Lresp = new ArrayList<Event>();
+		Event Lreq;
+		Event Lresp;
+		Date dreq = null;
+		Date dresp;
+		for (int i = end; i > 0; --i){
+			Event e = logOrigin.getEvent(i);
+			//System.out.println(logOrigin.subTrace(0, i));
+			if (e.isReq() && (e.getFrom().equals(comp) || e.getTo().equals(comp)) && logOrigin.subTrace(0, i).complete(comp)) {
+				Lreq = e;
+				dreq = Lreq.getDate(regex);
+				res = i;
+			}
+			if (!e.isReq() && (e.getFrom().equals(comp) || e.getTo().equals(comp)) && logOrigin.subTrace(0, i + 1).complete(comp)) {
+				Lresp = e;
+				dresp = Lresp.getDate(regex);
+				if (dreq.getTime() - dresp.getTime() > getMean(comp)) {
+					return res;
+				}
+			}
+		}
+		return 0;
+	}
+
 	public static boolean pendingRequest(Event aj, HashSet<ArrayList<Event>> SR) {
 		for (ArrayList<Event> LReq: SR) {
 			for (Event e: LReq) {
@@ -216,63 +249,66 @@ public class Main {
 		return false;
 	}
 
-
-
-	public static boolean isContinuation(Trace t, Event aj) {
+	public static boolean isContinuation(Trace t, Event aj, Trace trace) {
 		//part data
 		/*for(Event ai : t.getSeq()) {
 			if ((aj.getFrom().equals(ai.getFrom()) || aj.getFrom().equals(ai.getTo())) && aj.dataSimilarity(ai)){
 				return true;
 			}
 		}*/
+
+		/* test */ 
+		ArrayList<Event> candidate = new ArrayList<Event>();
+		//System.out.println(trace.toString());
+		for(Event ai : trace.getSeq()) {
+			if (aj.getFrom().equals(ai.getTo()) && aj.dataSimilarity(ai)){
+				candidate.add(ai);
+			}
+		}
+		if (!candidate.isEmpty() && t.getSeq().containsAll(candidate)) {
+			//System.out.println(candidate.toString());
+			return true;
+		}
+
 		//part time
-		double mean = 0.0;
-		if (means.containsKey(aj.getFrom())) {
-			mean = means.get(aj.getFrom());
-		}
-		else {
-			mean = getMean(aj.getFrom());
-			means.put(aj.getFrom(), mean);
-		}
+		/*double mean getMean(aj.getFrom());
 		Event prec = t.lastReq(aj.getFrom());
 		double diff = aj.getDate(regex).getTime() - prec.getDate(regex).getTime();
 		if (diff < mean/fact) { 
-			/*System.out.println(diff);
-			System.out.println(mean);
-			System.out.println(aj.getDate(regex));*/
 			return true;
-		}
+		}*/
 		return false;
 	}
 
-	
-	
 	public static double getMean(String comp) {
-		double sum = 0.0;
-		double c = 0.0;
-		for (Trace trace: traces) {
-			Date d1 = null;
-			for (Event e: trace.getSeq()) {
-				if ((e.getFrom().equals(comp) || e.getTo().equals(comp)) && e.isReq()) {
-					//System.out.println(line);
-					Date d2 = e.getDate(regex);
-					if(d1 == null){
-						d1 = d2;
-						continue;
-					}
-					else {
-						double dif = d2.getTime()-d1.getTime();
-						//if (line.contains("Host=" + comp)) {
-						//	System.out.println("dif = " + dif);
-						//}
-					c++;
-					sum = sum + dif;
-					d1 = d2;
+		if (means.containsKey(comp)) {
+			return means.get(comp);
+		}
+		else {
+			double sum = 0.0;
+			double c = 0.0;
+			for (Trace trace: traces) {
+				Date d1 = null;
+				for (Event e: trace.getSeq()) {
+					if ((e.getFrom().equals(comp) || e.getTo().equals(comp)) && e.isReq()) {
+						Date d2 = e.getDate(regex);
+						if(d1 == null){
+							d1 = d2;
+							continue;
+						}
+						else {
+							double dif = d2.getTime()-d1.getTime();
+							c++;
+							sum = sum + dif;
+							d1 = d2;
+						}
 					}
 				}
 			}
+			System.out.println("mean(" + comp + ") : " + sum/c);
+			means.put(comp, sum/c);
+			return sum/c;
 		}
-		return sum/c;
 	}
 
 }
