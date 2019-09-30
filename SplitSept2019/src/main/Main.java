@@ -55,6 +55,8 @@ public class Main {
 			e.printStackTrace();
 		}
 		
+		Dep.buildDAG(output);
+		
 		System.out.println("Dep : " + Dep.toString());
 		
 		System.out.println("DAG :\n " + Dep.getDag());
