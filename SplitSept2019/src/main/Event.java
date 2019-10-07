@@ -80,7 +80,7 @@ public class Event {
 	
 	public String toString() {
 		String res = label + "(";
-		res = res + "date=" + date + ";";//for debug only
+		//res = res + "date=" + date + ";";//for debug only
 		for (String param: params) {
 			res = res + param + ";";
 		}

@@ -74,6 +74,11 @@ public class Dependency {
 		return Arrays.deepToString(Dep.toArray());
 	}
 
+	public void add(ArrayList<String> ld) {
+		if (!Dep.contains(ld)) {
+			Dep.add(ld);
+		}
+	}
 
 	/* return the dag of dependencies corresponding to the component compo */
 	public ArrayList<ArrayList<String>> getDag(String compo){

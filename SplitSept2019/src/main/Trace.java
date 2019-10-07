@@ -51,12 +51,31 @@ public class Trace {
 		}
 	}
 	
+	public ArrayList<Event> getEvery(String from, String to){
+		ArrayList<Event> res = new ArrayList<Event>();
+		for (Event e : getSeq()) {
+			if (e.isReq() && e.getFrom().equals(from)/* && e.getTo().equals(to)*/) {
+				res.add(e);
+			}
+		}
+		return res;
+	}
+	
 	public Trace subTrace(int begin, int end) {
 		return new Trace(new ArrayList<Event>(seq.subList(begin, end)));
 	}
 	
 	public String toString() {
 		return Arrays.deepToString(seq.toArray());
+	}
+	
+	public boolean containsAll(ArrayList<Event> events) {
+		for (Event e: events) {
+			if (!seq.contains(e)) {
+				return false;
+			}
+		}
+		return true;
 	}
 	
 	public String debug() {
