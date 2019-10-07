@@ -51,7 +51,7 @@ public class Main {
 		//TODO getDependencies(T);
 		//
 		/* not for the time, will destroy my hdd */
-		/*try {
+		try {
 			for(Trace t: T) {
 				File f = new File(output+"/"+i);
 				t.writeTrace(f);
@@ -59,7 +59,7 @@ public class Main {
 			}
 		}catch(Exception e) {
 			e.printStackTrace();
-		}*/ 
+		}
 		final long timegenfile2 = System.currentTimeMillis();
 		final long timedag1 = System.currentTimeMillis();
 		Dep.buildDAG(output);
