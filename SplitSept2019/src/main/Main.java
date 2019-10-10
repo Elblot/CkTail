@@ -313,7 +313,7 @@ public class Main {
 		boolean one = false;
 		for(int i = t.size() - 1 ; i >= 0; i--) {
 			Event e = t.getEvent(i);
-			if (e.dataSimilarity(aj) && e.getTo().equals(aj.getFrom())){
+			if (e.dataSimilarity(aj) && e.getTo().equals(aj.getFrom()) && !chain.contains(e)){
 				if (one) {
 					return new ArrayList<Event>();
 				}
@@ -324,6 +324,9 @@ public class Main {
 			}
 		}
 		if (one) {
+			/*System.out.println("t=" + t.toString());
+			System.out.println("aprime=" + aprime.toString());
+			System.out.println("res=" + res.toString() + "\n\n");*/
 			res = checkDependencies(t, aprime, res);
 		}
 		else {
