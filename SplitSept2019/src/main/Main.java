@@ -6,6 +6,10 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
 
+import dependencies.Dependency;
+import model.Event;
+import model.Trace;
+
 public class Main {
 
 	public static String log;
@@ -22,7 +26,6 @@ public class Main {
 	public static Dependency Dep;
 
 	public static void main(String[] args) {
-		//System.out.println("begin");
 		final long timebuildingTraces1 = System.currentTimeMillis();
 		ArrayList<Trace> T = new ArrayList<Trace>();
 		means = new HashMap<String, Double>();
@@ -47,9 +50,7 @@ public class Main {
 		int i = 1;
 		File dir = new File(output);
 		dir.mkdir();
-		//
-		//TODO getDependencies(T);
-		//
+		
 		/* not for the time, will destroy my hdd */
 		try {
 			for(Trace t: T) {
@@ -91,10 +92,7 @@ public class Main {
 		return traces;
 	}
 
-	// process on already built Trace
 	public static ArrayList<Trace> Split(Trace trace){
-		//System.out.println("new trace:\n");
-
 		ArrayList<Trace> T = new ArrayList<Trace>();
 		int i = 1;
 		Event aj = trace.getEvent(i - 1);
@@ -120,7 +118,6 @@ public class Main {
 		eventAnalysis:
 			while (i <= trace.size()) {
 				aj = trace.getEvent(i - 1);
-				//System.out.println(aj.toString());
 				if (aj.isReq()) {
 					//case 2
 					for (ArrayList<Event> LReq: SR) {
@@ -147,7 +144,6 @@ public class Main {
 							break;
 						}
 						if(c==SR.size()) {
-							//System.out.println("case 3:" + aj.getDate(regex).toString());
 							tprimeprime.addEvent(aj);
 							i++;
 							continue eventAnalysis;	
@@ -172,7 +168,6 @@ public class Main {
 							break;
 						}
 						if(c==SR.size()) {
-							//int end = logOrigin.indexOf(aj);
 							if (checkDependencies(tprime, aj) || checkTime(tprime, aj)) {
 								tprime.addEvent(aj);
 								ArrayList<Event> LR = new ArrayList<Event>();
@@ -210,7 +205,6 @@ public class Main {
 		for (ArrayList<Event> LReq: SR) {
 			if (!LReq.isEmpty()) {
 				empty = false;
-				//System.out.println("not empty : " + LReq.toString());
 			}
 		}
 		if (empty){
@@ -220,40 +214,11 @@ public class Main {
 			System.out.println("not finished : " + tprime.debug());
 			
 		}
-		//System.out.println(tprimeprime);
 		if (!tprimeprime.isEmpty()) {
 			T.addAll(Split(tprimeprime));
 		}
 		return T;
 	}
-
-	/*public static int calc(int end) {
-		//System.out.println("other :" + logOrigin.getEvent(end) + "\n");
-		int res = end;
-		String comp = logOrigin.getEvent(end).getFrom();
-		//ArrayList<Event> Lresp = new ArrayList<Event>();
-		Event Lreq;
-		Event Lresp;
-		Date dreq = null;
-		Date dresp;
-		for (int i = end; i > 0; --i){
-			Event e = logOrigin.getEvent(i);
-			//System.out.println(logOrigin.subTrace(0, i));
-			if (e.isReq() && (e.getFrom().equals(comp) || e.getTo().equals(comp)) && logOrigin.subTrace(0, i).complete(comp)) {
-				Lreq = e;
-				dreq = Lreq.getDate(regex);
-				res = i;
-			}
-			if (!e.isReq() && (e.getFrom().equals(comp) || e.getTo().equals(comp)) && logOrigin.subTrace(0, i + 1).complete(comp)) {
-				Lresp = e;
-				dresp = Lresp.getDate(regex);
-				if (dreq.getTime() - dresp.getTime() > getMean(comp)) {
-					return res;
-				}
-			}
-		}
-		return 0;
-	}*/
 
 	public static boolean pendingRequest(Event aj, HashSet<ArrayList<Event>> SR) {
 		for (ArrayList<Event> LReq: SR) {
@@ -281,7 +246,7 @@ public class Main {
 		Trace sub = logOrigin.subTrace(0,logOrigin.indexOf(aj));//
 		ArrayList<Event> dependency = new ArrayList<Event>();
 		int c = 0;
-		ArrayList<Event> begin = t.getEvery(aj.getFrom(), aj.getTo());
+		ArrayList<Event> begin = sub.getEvery(aj.getFrom(), aj.getTo());
 		begin.add(aj);
 		for (Event e: begin) {
 			ArrayList<Event> dep = checkDependencies(sub, aj, chain);//
@@ -298,11 +263,9 @@ public class Main {
 			ld.add(aj.getTo());
 			ld.add(dependency.get(0).getFrom());
 			Dep.add(ld);
-			//System.out.println("true : " + dependency.toString());
 			return true;
 		}
 		else {
-			//System.out.println("false");
 			return false;
 		}
 	}
@@ -324,9 +287,6 @@ public class Main {
 			}
 		}
 		if (one) {
-			/*System.out.println("t=" + t.toString());
-			System.out.println("aprime=" + aprime.toString());
-			System.out.println("res=" + res.toString() + "\n\n");*/
 			res = checkDependencies(t, aprime, res);
 		}
 		else {
@@ -335,8 +295,6 @@ public class Main {
 		return res;
 	}
 	
-	
-
 	public static double getMean(String comp) {
 		if (means.containsKey(comp)) {
 			return means.get(comp);

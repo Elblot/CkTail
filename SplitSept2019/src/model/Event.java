@@ -1,10 +1,12 @@
-package main;
+package model;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.regex.Matcher;
+
+import main.Regex;
 
 
 public class Event {
@@ -14,7 +16,7 @@ public class Event {
 	
 	private String label;
 	private ArrayList<String> params;
-	public String date;  //public for debug
+	public String date;  //public for debug only
 	
 	
 	public Event(String line, Matcher m) {
@@ -98,24 +100,6 @@ public class Event {
 		return res;
 	}
 	
-	/*public boolean dataSimilarity(Event ai) {
-		ArrayList<String> paramsi = ai.getparams();
-		ArrayList<String> paramsj = this.getparams();
-		first:
-		for (String parami: paramsi) {
-			if (!(parami.contains(from) || parami.contains(to))) {
-				for (String paramj: paramsj) {
-					if (paramj.equals(parami)) {
-						continue first;
-					}
-				}
-				return false;
-			}
-		}
-		return true;
-	}*/
-	
-/* original */
 	public boolean dataSimilarity(Event ai) {
 		ArrayList<String> paramsi = ai.getparams();
 		ArrayList<String> paramsj = this.getparams();
@@ -123,7 +107,6 @@ public class Event {
 			if (!(parami.contains(from) || parami.contains(to))) {
 				for (String paramj: paramsj) {
 					if (paramj.equals(parami)) {
-						//System.out.println("match :" + parami);
 						return true;
 					}
 				}

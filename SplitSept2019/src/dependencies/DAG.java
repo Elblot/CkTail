@@ -1,4 +1,4 @@
-package main;
+package dependencies;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -71,7 +71,7 @@ public class DAG {
 		}catch (IOException e){
 			System.out.println("error " + e);
 		}
-
+		/* generate the pdf from the dot */ /* don't work and I don't know why */
 		String execCommand = "dot -Tpdf " + comp + ".dot -o " + comp + ".pdf";
 		Process dotProcess;
 		try {

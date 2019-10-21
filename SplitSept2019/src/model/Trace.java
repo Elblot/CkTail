@@ -1,4 +1,4 @@
-package main;
+package model;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -10,6 +10,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.regex.Matcher;
+
+import main.Regex;
 
 public class Trace {
 
