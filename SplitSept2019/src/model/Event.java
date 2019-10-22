@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.regex.Matcher;
 
-import main.Regex;
+import main.Split.Regex;
 
 
 public class Event {
