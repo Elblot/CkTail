@@ -263,6 +263,7 @@ public class Main {
 			ld.add(aj.getTo());
 			ld.add(dependency.get(0).getFrom());
 			Dep.add(ld);
+			System.out.println("dep:" + ld);
 			return true;
 		}
 		else {

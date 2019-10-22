@@ -77,6 +77,7 @@ public class Dependency {
 		return res;
 	}
 
+	
 	public void buildDAG(String output) {
 		File folder = new File(output + "/DAG");
 		folder.mkdir();

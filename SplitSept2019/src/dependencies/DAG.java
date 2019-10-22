@@ -13,6 +13,7 @@ public class DAG {
 	public HashSet<String[]> transitions;
 
 	public DAG() {
+		
 		nodes = new ArrayList<String>();
 		transitions = new HashSet<String[]>();
 	}
@@ -71,7 +72,8 @@ public class DAG {
 		}catch (IOException e){
 			System.out.println("error " + e);
 		}
-		/* generate the pdf from the dot */ /* don't work and I don't know why */
+		/* generate the pdf from the dot */ 
+		/* don't work and I don't know why */
 		String execCommand = "dot -Tpdf " + comp + ".dot -o " + comp + ".pdf";
 		Process dotProcess;
 		try {
