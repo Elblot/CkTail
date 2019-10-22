@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="junit-4.9b2.jar/commons-cli-1.4.jar"/>
+	<classpathentry kind="lib" path="junit-4.9b2.jar/mlp.jar"/>
+	<classpathentry kind="lib" path="junit-4.9b2.jar/plume.jar"/>
+	<classpathentry kind="lib" path="junit-4.9b2.jar/smile-core-1.5.1.jar"/>
+	<classpathentry kind="lib" path="junit-4.9b2.jar/smile-data-1.5.1.jar"/>
+	<classpathentry kind="lib" path="junit-4.9b2.jar/smile-graph-1.5.1.jar"/>
+	<classpathentry kind="lib" path="junit-4.9b2.jar/smile-math-1.5.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
