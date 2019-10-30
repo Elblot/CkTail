@@ -6,6 +6,7 @@ CkTail infers a system of LTSs, where each LTS represents a component communicat
 
 ### Prerequisite
 Each action of the log has to contains a timestamp, following the date format given in the regex file with the line:
+
 **-d \<dateFormat\>** 
 
 The actions has to contain an identifier of the component that has sent the message (the source, denoted "Host=\<id\>" in the log), and an identifier of the component that receive the message (the destination, denoted "Dest=\<id\>" in the log). 
@@ -14,7 +15,10 @@ The actions log is composed of *Requests* and *Responses*. Each *Request* has an
 
 ### Overview
 The implementation works in two parts. 
-The first part, Split, aims to analyse the log in order to extract the dependencies between the components, and separates the log into many traces that capture the sessions.
+The first part, Split, aims to analyse the log in order to extract the dependencies between the components, and separates the log into many traces that capture the sessions.<!--- We concider that two actions *a1(from1,to1)* and *a2(from2,to2)* are in the same session if :
+- *a1* and *a2* are requests, with *from2=to1* and the response corresponding to *a1* come after *a2*
+or
+- their exist a chain of action  --->
 
 The second part, model generation, infers models of the different components, using the traces generated in the previous step.
 
