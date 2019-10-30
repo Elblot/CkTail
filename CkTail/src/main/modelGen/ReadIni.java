@@ -2,13 +2,13 @@ package main.modelGen;
 import java.io.FileInputStream;
 import java.util.Properties;
  
-class readIni {
+class ReadIni {
 	/**
 	 * read the user.ini file.
 	 */
 	
   public static String read() {
-    readIni ini = new readIni();
+    ReadIni ini = new ReadIni();
     return ini.command();
     }
  

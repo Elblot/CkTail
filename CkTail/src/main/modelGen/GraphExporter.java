@@ -24,7 +24,7 @@ public class GraphExporter {
     static String dotCommand = null;
 
 	private static void getConfig() {
-		dotCommand = readIni.read();
+		dotCommand = ReadIni.read();
 	}
 
     public static void generatePngFileFromDotFile(String fileName) {
