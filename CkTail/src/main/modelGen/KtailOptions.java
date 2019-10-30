@@ -13,21 +13,21 @@ public class KtailOptions {
 	    try {
 		    final CommandLine line = parser.parse(options, args);
 		    
-		    MainC.dir = line.getOptionValue("dir");
-		    MainC.dest = line.getOptionValue("dest");
+		    MainGen.dir = line.getOptionValue("input");
+		    MainGen.dest = line.getOptionValue("dest");
 		   		    
 		    // Timer
 		    boolean timerMode = line.hasOption("timer");
 		    if(timerMode) {
-		    	MainC.timerMode = true;
+		    	MainGen.timerMode = true;
 		    }
 		    
 		    boolean tmp = line.hasOption("tmp");
 		    if(tmp) {
-		    	MainC.tmp = true;
+		    	MainGen.tmp = true;
 	    }
 	    }catch(Exception e) {
-	    	System.out.println("Usage : MainC -d <directory> -o <destination>\n"
+	    	System.out.println("Usage : MainC -i <directory> -o <destination>\n"
 	    			+ "Options :\n"
 	    			+ "-t\tshow the duration of each step of the program\n"
 	    			+ "-w\tshow temporal files used to make .dot files\n");  
@@ -36,11 +36,11 @@ public class KtailOptions {
 	
 	private static Options configParameters() {
 	
-		final Option dirFileOption = Option.builder("d")
-				.longOpt("dir")
+		final Option dirFileOption = Option.builder("i")
+				.longOpt("input")
 				.desc("directory to use")
 				.hasArg(true)
-				.argName("dir")
+				.argName("input")
 				.required(true)
 				.build();
 	

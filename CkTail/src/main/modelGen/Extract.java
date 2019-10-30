@@ -115,7 +115,7 @@ public class Extract {
 
 	// create the directory that will contain the nex traces
 	private static String createDir() {
-		String tmpName = null, fName = "RESULTS/"+MainC.dest;
+		String tmpName = null, fName = "RESULTS/"+MainGen.dest;
 		int i = 1;
 		File x = new File(fName);
 		while(x.exists()) {
@@ -126,7 +126,7 @@ public class Extract {
 		if (tmpName != null) {
 			fName = tmpName;
 		}
-		MainC.dest = fName;
+		MainGen.dest = fName;
 
 		fName = fName+"/trace";
 		x = new File(fName);

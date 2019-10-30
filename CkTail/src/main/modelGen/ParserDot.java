@@ -25,7 +25,7 @@ public class ParserDot {
 	
 	
 	public String parser(File f) {
-		File file = new File(MainC.dest+"/RESULTAT.txt");
+		File file = new File(MainGen.dest+"/RESULTAT.txt");
 		try {
 			file.createNewFile();
 		} catch (IOException e2) {
@@ -138,7 +138,7 @@ public class ParserDot {
 			}
 		}
 		
-		String fileName = MainC.dest+"/C"+j+".dot";
+		String fileName = MainGen.dest+"/C"+j+".dot";
 		File file = new File(fileName);
 		BufferedWriter bw = new BufferedWriter(new FileWriter(file));
 		bw.write(atrier[0]+"\n");

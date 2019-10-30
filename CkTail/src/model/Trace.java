@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.regex.Matcher;
 
-import main.Split.Regex;
+import main.split.Regex;
 
 public class Trace {
 
