@@ -158,7 +158,6 @@ public class GenerateDOT {
 		// TODO lack of file format control
 		FSA result = new FSA();
 		State initialState;
-		State finalState;
 		ArrayList<State> finalStates = new ArrayList<State>();
 		Set<Transition> transitions = new HashSet<Transition>();
 		
@@ -171,6 +170,7 @@ public class GenerateDOT {
 
 		try {
 			File dotFile = new File(filename);
+			@SuppressWarnings("resource")
 			BufferedReader bf = new BufferedReader(new FileReader(dotFile));
 
 			for (int i = 0; i < 3; i++) {// jump off the first two line
@@ -285,7 +285,6 @@ public class GenerateDOT {
 				line = bf.readLine();
 				counter++;
 			}
-
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

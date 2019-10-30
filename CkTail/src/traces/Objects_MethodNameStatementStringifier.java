@@ -43,11 +43,11 @@ public class Objects_MethodNameStatementStringifier extends StatementsStringifie
 	 */
 	@Override
 	public String getText(Statement st) {
-		ObjectInstance caller=st.getSender();
-		ObjectInstance callee=st.getReceiver();
+		//ObjectInstance caller=st.getSender();
+		//ObjectInstance callee=st.getReceiver();
 		Method meth=st.getMethod();
-		String c="";
-		if (st.isClosing()){c="closing_";} 
+		//String c="";
+		//if (st.isClosing()){c="closing_";} 
 		String m=meth.getName();// +"()";
 		if (m.compareTo("()")==0){return("");}
 		//ObjectClass callerclass=caller.getObjectClass();
@@ -113,14 +113,14 @@ public class Objects_MethodNameStatementStringifier extends StatementsStringifie
 		ArrayList<ObjectInstance> pa=new ArrayList<ObjectInstance>();
 		pa.add(account0);
 		Statement st1=new Statement("S"+i++,atm0,new Method("checkAccount",pa,bank),bank0);
-		Statement st2=new Statement("S"+i++,atm0,new Method("checkCard",new ArrayList<ObjectInstance>(),atm),atm0);
+		/*Statement st2=new Statement("S"+i++,atm0,new Method("checkCard",new ArrayList<ObjectInstance>(),atm),atm0);
 		
 		Statement st3=new Statement("S"+i++,atm0,new Method("requestPass",new ArrayList<ObjectInstance>(),ihm),ihm0);
 		
 		Statement st4=new Statement("S"+i++,atm0,new Method("ejectCard",new ArrayList<ObjectInstance>(),ihm),ihm0);
 		Statement st5=new Statement("S1"+i++,atm0,new Method("requestTakeCard",new ArrayList<ObjectInstance>(),ihm),ihm0);
 		Statement st6=new Statement("S1"+i++,atm0,new Method("quit",new ArrayList<ObjectInstance>(),ihm),ihm0);
-		Statement st7=new Statement("S1"+i++,atm0,new Method("blabla",new ArrayList<ObjectInstance>(),ihm),ihm0);
+		Statement st7=new Statement("S1"+i++,atm0,new Method("blabla",new ArrayList<ObjectInstance>(),ihm),ihm0);*/
 		
 		Objects_MethodNameStatementStringifier o=new  Objects_MethodNameStatementStringifier();
 		

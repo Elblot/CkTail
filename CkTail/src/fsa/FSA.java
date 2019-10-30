@@ -232,6 +232,7 @@ public class FSA implements Serializable{
 		this.states.put(state.getName(), state);
 		//System.out.println("Add state "+state);
 	}
+	@SuppressWarnings("unlikely-arg-type")
 	public void removeState(State state) {
 		if (initialState==state){
 			initialState=null;
@@ -543,7 +544,6 @@ public class FSA implements Serializable{
 	
 	public int chercherPlusProcheLongueur(int l){
 		//System.out.println("cherche "+l);
-		int cherche=l;
 		int min=-1;
 		int lmin=-1;
 		for(int i=0;i<this.possibleLengths.size();i++){
@@ -788,19 +788,14 @@ public class FSA implements Serializable{
 	
 	// Generation uniforme de traces a partir du FSA
 	public Trace genereTrace() {
-		EpsilonTransitionChecker checker=new EpsilonTransitionChecker();
 		Trace trace=new Trace();
-		//TraceGenResult trg=new TraceGenResult();
-		//trg.addTrace(trace);
 		boolean ok=false;
 		State current=initialState;
 		while(!ok){
 			ArrayList<Transition> trans=current.getSuccesseurs();
 			int nb=trans.size();
-			boolean fin_possible=false;
 			if (finalStates.contains(current)){
 				//System.out.println(current);
-				fin_possible=true;
 				nb++;
 			}
 			int choix=(int)(Math.random()*nb);
@@ -815,10 +810,9 @@ public class FSA implements Serializable{
 					System.out.println("Probleme => Trigger non Statement... Que faire ?");
 				}
 				else{
-					if(!checker.isEpsilonTransition(choisie)){
+					if(!EpsilonTransitionChecker.isEpsilonTransition(choisie)){
 						Statement st=(Statement)trig;
 						trace.add(st);
-						//System.out.println("Add "+st);
 					}
 				}
 				current=cible;

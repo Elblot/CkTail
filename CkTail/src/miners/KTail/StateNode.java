@@ -40,10 +40,12 @@ import traces.Statement;
 public class StateNode extends State{
 	private HashMap<String, StateNode> fils; // Si pas feuille, noeud fils
 	//private State state=null;   // Si feuille, contient l'etat
-	private Statement statement=null;
+	//private Statement statement=null;
 	//private HashMap<StateNode, Transition> transitions; 
 	private HashMap<String,Transition> transitions;
-	private StateNode parent=null;
+	//private StateNode parent=null;
+	
+	private static final long serialVersionUID = 1L;// no idea what it is
 	
 	public StateNode(){   
 		fils=new HashMap<String,StateNode>();
@@ -55,8 +57,8 @@ public class StateNode extends State{
 	}
 	public StateNode(Statement s, StateNode parent){
 		fils=new HashMap<String,StateNode>();
-		statement=s;
-		this.parent=parent;
+		//statement=s;
+		//this.parent=parent;
 		//state=new State();
 		//transitions=new HashMap<StateNode,Transition>();
 		transitions=new HashMap<String,Transition>();

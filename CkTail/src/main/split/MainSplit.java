@@ -232,7 +232,7 @@ public class MainSplit {
 		int c = 0;
 		ArrayList<Event> begin = sub.getEvery(aj.getFrom(), aj.getTo());
 		begin.add(aj);
-		for (Event e: begin) {
+		for (@SuppressWarnings("unused") Event e: begin) {
 			ArrayList<Event> dep = checkDependencies(sub, aj, chain);//
 			if (!dep.isEmpty()) {
 				c++;
