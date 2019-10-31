@@ -1,0 +1,7 @@
+-d MMM dd, yyyy HH:mm:ss.SSS
+-r ^(?<date>\w{3} \d{2}, \d{4} \d{2}:\d{2}:\d{2}.\d{3})  WEBH : (?<param1>(\w+=\d+\.\d+\.\d+\.\d+)) (?<param2>(\w+=\d+\.\d+\.\d+\.\d+)) (?<param3>(Uri=)(?<label>[^?]+))[?](?<param4>[^&]+)&(?<param5>[^&]+)& lastlogtime=[^&]+&(?<param6>[^&]+)$
+-r ^(?<date>\w{3} \d{2}, \d{4} \d{2}:\d{2}:\d{2}.\d{3})  WEBH : (?<param1>(\w+=\d+\.\d+\.\d+\.\d+)) (?<param2>(\w+=\d+\.\d+\.\d+\.\d+)) HTTP/1.1 (?<param3>[^\s]+)\s(?<param4>(?<label>([^=]+))=[^\s]+)  [(].*[)]$
+-r ^(?<date>\w{3} \d{2}, \d{4} \d{2}:\d{2}:\d{2}.\d{3})  WEBH : (?<param1>(\w+=\d+\.\d+\.\d+\.\d+)) (?<param2>(\w+=\d+\.\d+\.\d+\.\d+)) (?<param3>(Uri=)(?<label>[^?]+))[?](?<param4>[^&]+)&(?<param5>[^&]+)&(?<param6>[^&]+)$
+-r ^(?<date>\w{3} \d{2}, \d{4} \d{2}:\d{2}:\d{2}.\d{3})  WEBH : (?<param1>(\w+=\d+\.\d+\.\d+\.\d+)) (?<param2>(\w+=\d+\.\d+\.\d+\.\d+)) (?<param3>(Uri=)(?<label>[^?]+))[?](?<param4>[^&]+)&(?<param5>[^&]+)$
+-r ^(?<date>\w{3} \d{2}, \d{4} \d{2}:\d{2}:\d{2}.\d{3})  WEBH : (?<param1>(\w+=\d+\.\d+\.\d+\.\d+)) (?<param2>(\w+=\d+\.\d+\.\d+\.\d+)) (?<param3>(Uri=)(?<label>[^?]+))[?](?<param4>[^&]+)&(?<param5>[^&]+)&(?<param6> used=[^&]+)&(?<param7>[^&]+)$
+-r ^(?<date>\w{3} \d{2}, \d{4} \d{2}:\d{2}:\d{2}.\d{3})  WEBH : (?<param1>(\w+=\d+\.\d+\.\d+\.\d+)) (?<param2>(\w+=\d+\.\d+\.\d+\.\d+)) (?<param3>(Uri=)(?<label>[^?]+))[?](?<param4>[^&]+)&(?<param5>[^&]+)&(?<param6> idx=[^&]+)&(?<param7>[^&]+)$

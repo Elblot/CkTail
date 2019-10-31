@@ -1,0 +1,2 @@
+/json.htm(Host=192.168.43.101;Dest=192.168.43.76;Verb=GET;Uri=/json.htm;type=command;param=switchlight;idx=2;command=On;rssi)
+OK(Host=192.168.43.76;Dest=192.168.43.101;status=200;response=OK)

@@ -1,0 +1,2 @@
+!/json.htm(Host=192.168.1.53;Dest=192.168.1.2;Uri=/json.htm;type= command; param= switchlight; idx= 3845; switchcmd= Off)
+?response(Host=192.168.1.2;Dest=192.168.1.53;status=200;response=OK)

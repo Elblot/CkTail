@@ -1,0 +1,2 @@
+/json.htm(Host=192.168.1.22;Dest=192.168.1.2;Uri=/json.htm;type= command; param= udevice; idx= 1922; svalue= 19.80:46.50:0)
+response(Host=192.168.1.2;Dest=192.168.1.22;status=200;response=OK)

@@ -1,0 +1,25 @@
+C2.dot contient :
+2 �tats
+5 transitions
+
+C4.dot contient :
+2 �tats
+3 transitions
+
+C1.dot contient :
+11 �tats
+24 transitions
+
+C3.dot contient :
+3 �tats
+5 transitions
+
+--------------------------------
+TOTAL :
+18 States
+37 Transitions
+Correlation Duration: 268 ms
+Clustering Duration: 57 ms
+KTail Duration: 34 ms
+Parser Duration: 987 ms
+Program Duration: 1427 ms

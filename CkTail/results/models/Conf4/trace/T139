@@ -1,0 +1,2 @@
+?/json.htm(Host=192.168.43.101;Dest=192.168.43.76;Verb=GET;Uri=/json.htm;type=command;param=udevice;idx=1;nvalue;svalue=24.00:47.00:1;rssi)
+!OK(Host=192.168.43.76;Dest=192.168.43.101;status=200;response=OK)

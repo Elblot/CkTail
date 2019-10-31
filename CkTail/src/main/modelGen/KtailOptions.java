@@ -30,7 +30,7 @@ public class KtailOptions {
 	    	System.out.println("Usage : MainC -i <directory> -o <destination>\n"
 	    			+ "Options :\n"
 	    			+ "-t\tshow the duration of each step of the program\n"
-	    			+ "-w\tshow temporal files used to make .dot files\n");  
+	    			);  
 	    	System.exit(1);}
 	}
 	

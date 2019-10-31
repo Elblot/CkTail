@@ -1,0 +1,10 @@
+digraph LTS {
+S00[shape=point]
+S1[label=S1,shape=circle];
+S2[label=S2,shape=circle];
+S00 -> S1
+S1 -> S2[label ="!/json.htm(Host=192.168.1.52;Dest=192.168.1.2;Uri=/json.htm;type= command; param= udevice; idx= 3847; svalue= 18.80:24.70:2)"];
+S1 -> S2[label ="!/json.htm(Host=192.168.1.52;Dest=192.168.1.2;Uri=/json.htm;type= command; param= switchlight; idx= 3848; switchcmd= On)"];
+S1 -> S2[label ="!/json.htm(Host=192.168.1.52;Dest=192.168.1.2;Uri=/json.htm;type= command; param= switchlight; idx= 3848; switchcmd= Off)"];
+S2 -> S1[label ="?response(Host=192.168.1.2;Dest=192.168.1.52;status=200;response=OK)"];
+}

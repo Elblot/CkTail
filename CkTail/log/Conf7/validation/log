@@ -1,0 +1,394 @@
+Jan 19, 2018 09:34:17.776  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:34:17.876  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:18.087  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:34:18.187  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:19.329  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:34:19.429  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:22.004  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:34:22.104  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:22.309  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:34:22.409  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:22.644  WEBH : Host=192.168.1.11 Dest=192.168.1.2 Uri=/json.htm?type= command& param= getlog& lastlogtime= 1516350857& loglevel= 2
+Jan 19, 2018 09:34:22.744  WEBH : Host=192.168.1.2 Dest=192.168.1.11 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:23.524  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:34:23.624  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:23.774  WEBH : Host=192.168.1.7 Dest=192.168.1.2 Uri=/json.htm?type= command& param= udevice& idx= 558& svalue= 1420.83
+Jan 19, 2018 09:34:23.874  WEBH : Host=192.168.1.2 Dest=192.168.1.7 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:24.837  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:34:24.937  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:25.166  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:34:25.266  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:26.369  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:34:26.469  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:27.003  WEBH : Host=192.168.1.22 Dest=192.168.1.2 Uri=/json.htm?type= command& param= udevice& idx= 1922& svalue= 19.70:46.60:0
+Jan 19, 2018 09:34:27.103  WEBH : Host=192.168.1.2 Dest=192.168.1.22 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:27.771  WEBH : Host=192.168.1.11 Dest=192.168.1.2 Uri=/json.htm?type= command& param= getlog& lastlogtime= 1516350862& loglevel= 2
+Jan 19, 2018 09:34:27.871  WEBH : Host=192.168.1.2 Dest=192.168.1.11 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:28.885  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:34:28.985  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:29.189  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:34:29.289  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:30.443  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:34:30.543  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:31.768  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:34:31.868  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:32.078  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:34:32.178  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:32.796  WEBH : Host=192.168.1.11 Dest=192.168.1.2 Uri=/json.htm?type= command& param= getlog& lastlogtime= 1516350867& loglevel= 2
+Jan 19, 2018 09:34:32.896  WEBH : Host=192.168.1.2 Dest=192.168.1.11 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:33.319  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:34:33.419  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:35.810  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:34:35.910  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:36.150  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:34:36.250  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:37.341  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:34:37.441  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:37.820  WEBH : Host=192.168.1.11 Dest=192.168.1.2 Uri=/json.htm?type= command& param= getlog& lastlogtime= 1516350872& loglevel= 2
+Jan 19, 2018 09:34:37.920  WEBH : Host=192.168.1.2 Dest=192.168.1.11 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:38.668  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:34:38.768  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:38.981  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:34:39.081  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:39.367  WEBH : Host=192.168.1.53 Dest=192.168.1.2 Uri=/json.htm?type= command& param= udevice& idx= 3846& svalue= 18.10:26.60:2
+Jan 19, 2018 09:34:39.467  WEBH : Host=192.168.1.2 Dest=192.168.1.53 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:40.252  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:34:40.352  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:42.660  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:34:42.760  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:42.976  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:34:43.076  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:43.322  WEBH : Host=192.168.1.11 Dest=192.168.1.2 Uri=/json.htm?type= command& param= getlog& lastlogtime= 1516350877& loglevel= 2
+Jan 19, 2018 09:34:43.422  WEBH : Host=192.168.1.2 Dest=192.168.1.11 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:43.544  WEBH : Host=192.168.1.51 Dest=192.168.1.2 Uri=/json.htm?type= command& param= switchlight& idx= 0& switchcmd= On
+Jan 19, 2018 09:34:43.644  WEBH : Host=192.168.1.2 Dest=192.168.1.51 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:44.222  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:34:44.322  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:45.704  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:34:45.804  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:46.059  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:34:46.159  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:46.407  WEBH : Host=192.168.1.51 Dest=192.168.1.2 Uri=/json.htm?type= command& param= switchlight& idx= 0& switchcmd= Off
+Jan 19, 2018 09:34:46.507  WEBH : Host=192.168.1.2 Dest=192.168.1.51 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:47.309  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:34:47.409  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:47.489  WEBH : Host=192.168.1.23 Dest=192.168.1.2 Uri=/json.htm?type= command& param= udevice& idx= 1923& svalue= 17.70:49.20:0
+Jan 19, 2018 09:34:47.589  WEBH : Host=192.168.1.2 Dest=192.168.1.23 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:48.476  WEBH : Host=192.168.1.11 Dest=192.168.1.2 Uri=/json.htm?type= command& param= getlog& lastlogtime= 1516350883& loglevel= 2
+Jan 19, 2018 09:34:48.576  WEBH : Host=192.168.1.2 Dest=192.168.1.11 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:49.534  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:34:49.634  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:49.873  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:34:49.973  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:50.205  WEBH : Host=192.168.1.52 Dest=192.168.1.2 Uri=/json.htm?type= command& param= udevice& idx= 3847& svalue= 18.80:24.80:2
+Jan 19, 2018 09:34:50.305  WEBH : Host=192.168.1.2 Dest=192.168.1.52 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:51.070  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:34:51.170  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:52.643  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:34:52.743  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:52.943  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:34:53.043  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:53.502  WEBH : Host=192.168.1.11 Dest=192.168.1.2 Uri=/json.htm?type= command& param= getlog& lastlogtime= 1516350888& loglevel= 2
+Jan 19, 2018 09:34:53.602  WEBH : Host=192.168.1.2 Dest=192.168.1.11 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:54.150  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:34:54.250  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:56.418  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:34:56.518  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:56.766  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:34:56.866  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:57.981  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:34:58.081  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:58.539  WEBH : Host=192.168.1.11 Dest=192.168.1.2 Uri=/json.htm?type= command& param= getlog& lastlogtime= 1516350893& loglevel= 2
+Jan 19, 2018 09:34:58.639  WEBH : Host=192.168.1.2 Dest=192.168.1.11 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:59.630  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:34:59.730  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:34:59.972  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:35:00.072  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:01.198  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:35:01.298  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:03.287  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:35:03.387  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:03.587  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:35:03.687  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:03.920  WEBH : Host=192.168.1.11 Dest=192.168.1.2 Uri=/json.htm?type= command& param= getlog& lastlogtime= 1516350898& loglevel= 2
+Jan 19, 2018 09:35:04.020  WEBH : Host=192.168.1.2 Dest=192.168.1.11 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:04.836  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:35:04.936  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:06.880  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:35:06.980  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:07.196  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:35:07.296  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:08.415  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:35:08.515  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:09.042  WEBH : Host=192.168.1.11 Dest=192.168.1.2 Uri=/json.htm?type= command& param= getlog& lastlogtime= 1516350903& loglevel= 2
+Jan 19, 2018 09:35:09.142  WEBH : Host=192.168.1.2 Dest=192.168.1.11 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:10.217  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:35:10.317  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:10.545  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:35:10.645  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:11.771  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:35:11.871  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:13.682  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:35:13.482  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:13.981  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:35:14.081  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:14.348  WEBH : Host=192.168.1.11 Dest=192.168.1.2 Uri=/json.htm?type= command& param= getlog& lastlogtime= 1516350909& loglevel= 2
+Jan 19, 2018 09:35:14.448  WEBH : Host=192.168.1.2 Dest=192.168.1.11 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:15.227  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:35:15.327  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:15.954  WEBH : Host=192.168.1.21 Dest=192.168.1.2 Uri=/json.htm?type= command& param= udevice& idx= 115& svalue= 16.50:15.00:0
+Jan 19, 2018 09:35:16.054  WEBH : Host=192.168.1.2 Dest=192.168.1.21 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:17.071  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:35:17.171  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:17.370  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:35:17.470  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:18.617  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:35:18.717  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:19.486  WEBH : Host=192.168.1.11 Dest=192.168.1.2 Uri=/json.htm?type= command& param= getlog& lastlogtime= 1516350914& loglevel= 2
+Jan 19, 2018 09:35:19.586  WEBH : Host=192.168.1.2 Dest=192.168.1.11 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:20.578  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:35:20.678  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:20.882  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:35:20.982  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:22.100  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:35:22.200  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:23.834  WEBH : Host=192.168.1.7 Dest=192.168.1.2 Uri=/json.htm?type= command& param= udevice& idx= 558& svalue= 1338.33
+Jan 19, 2018 09:35:23.934  WEBH : Host=192.168.1.2 Dest=192.168.1.7 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:24.179  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:35:24.279  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:24.527  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:35:24.627  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:24.858  WEBH : Host=192.168.1.11 Dest=192.168.1.2 Uri=/json.htm?type= command& param= getlog& lastlogtime= 1516350919& loglevel= 2
+Jan 19, 2018 09:35:24.958  WEBH : Host=192.168.1.2 Dest=192.168.1.11 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:25.709  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:35:25.809  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:27.065  WEBH : Host=192.168.1.22 Dest=192.168.1.2 Uri=/json.htm?type= command& param= udevice& idx= 1922& svalue= 19.80:46.60:0
+Jan 19, 2018 09:35:27.165  WEBH : Host=192.168.1.2 Dest=192.168.1.22 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:27.425  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:35:27.525  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:27.726  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:35:27.826  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:28.915  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:35:29.015  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:29.929  WEBH : Host=192.168.1.11 Dest=192.168.1.2 Uri=/json.htm?type= command& param= getlog& lastlogtime= 1516350924& loglevel= 2
+Jan 19, 2018 09:35:30.029  WEBH : Host=192.168.1.2 Dest=192.168.1.11 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:31.042  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:35:31.142  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:31.343  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:35:31.443  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:32.535  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:35:32.635  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:34.185  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:35:34.285  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:34.541  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:35:34.641  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:34.956  WEBH : Host=192.168.1.11 Dest=192.168.1.2 Uri=/json.htm?type= command& param= getlog& lastlogtime= 1516350929& loglevel= 2
+Jan 19, 2018 09:35:35.056  WEBH : Host=192.168.1.2 Dest=192.168.1.11 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:35.743  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:35:35.843  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:37.858  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:35:37.958  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:38.181  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:35:38.281  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:39.251  WEBH : Host=192.168.1.53 Dest=192.168.1.2 Uri=/json.htm?type= command& param= udevice& idx= 3846& svalue= 18.10:26.70:2
+Jan 19, 2018 09:35:39.351  WEBH : Host=192.168.1.2 Dest=192.168.1.53 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:41.319  WEBH : Host=192.168.1.11 Dest=192.168.1.2 Uri=/json.htm?type= command& param= getlog& lastlogtime= 1516350934& loglevel= 2
+Jan 19, 2018 09:35:41.419  WEBH : Host=192.168.1.2 Dest=192.168.1.11 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:41.324  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:35:41.408  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:35:41.424  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:41.508  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:41.722  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:35:41.822  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:42.966  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:35:43.066  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:45.061  WEBH : Host=192.168.1.51 Dest=192.168.1.2 Uri=/json.htm?type= command& param= switchlight& idx= 0& switchcmd= On
+Jan 19, 2018 09:35:45.161  WEBH : Host=192.168.1.2 Dest=192.168.1.51 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:46.490  WEBH : Host=192.168.1.11 Dest=192.168.1.2 Uri=/json.htm?type= command& param= getlog& lastlogtime= 1516350941& loglevel= 2
+Jan 19, 2018 09:35:46.590  WEBH : Host=192.168.1.2 Dest=192.168.1.11 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:46.845  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:35:46.945  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:47.154  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:35:47.254  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:47.551  WEBH : Host=192.168.1.23 Dest=192.168.1.2 Uri=/json.htm?type= command& param= udevice& idx= 1923& svalue= 17.70:49.20:0
+Jan 19, 2018 09:35:47.586  WEBH : Host=192.168.1.51 Dest=192.168.1.2 Uri=/json.htm?type= command& param= switchlight& idx= 0& switchcmd= Off
+Jan 19, 2018 09:35:47.651  WEBH : Host=192.168.1.2 Dest=192.168.1.23 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:47.686  WEBH : Host=192.168.1.2 Dest=192.168.1.51 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:48.403  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:35:48.453  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:48.474  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:35:48.574  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:48.786  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:35:49.848  WEBH : Host=192.168.1.52 Dest=192.168.1.2 Uri=/json.htm?type= command& param= udevice& idx= 3847& svalue= 18.80:24.70:2
+Jan 19, 2018 09:35:48.886  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:49.948  WEBH : Host=192.168.1.2 Dest=192.168.1.52 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:50.119  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:35:50.219  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:51.516  WEBH : Host=192.168.1.11 Dest=192.168.1.2 Uri=/json.htm?type= command& param= getlog& lastlogtime= 1516350946& loglevel= 2
+Jan 19, 2018 09:35:51.616  WEBH : Host=192.168.1.2 Dest=192.168.1.11 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:53.937  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:35:54.037  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:54.248  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:35:54.348  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:55.537  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:35:55.587  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:55.607  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:35:55.707  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:55.911  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:35:56.011  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:56.379  WEBH : Host=192.168.1.53 Dest=192.168.1.2 Uri=/json.htm?type= command& param= switchlight& idx= 3845& switchcmd= On
+Jan 19, 2018 09:35:56.479  WEBH : Host=192.168.1.2 Dest=192.168.1.53 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:56.549  WEBH : Host=192.168.1.11 Dest=192.168.1.2 Uri=/json.htm?type= command& param= getlog& lastlogtime= 1516350951& loglevel= 2
+Jan 19, 2018 09:35:56.649  WEBH : Host=192.168.1.2 Dest=192.168.1.11 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:57.162  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:35:57.262  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:58.004  WEBH : Host=192.168.1.52 Dest=192.168.1.2 Uri=/json.htm?type= command& param= switchlight& idx= 3848& switchcmd= On
+Jan 19, 2018 09:35:58.104  WEBH : Host=192.168.1.2 Dest=192.168.1.52 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:35:58.888  WEBH : Host=192.168.1.53 Dest=192.168.1.2 Uri=/json.htm?type= command& param= switchlight& idx= 3845& switchcmd= Off
+Jan 19, 2018 09:35:58.988  WEBH : Host=192.168.1.2 Dest=192.168.1.53 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:00.614  WEBH : Host=192.168.1.52 Dest=192.168.1.2 Uri=/json.htm?type= command& param= switchlight& idx= 3848& switchcmd= Off
+Jan 19, 2018 09:36:00.714  WEBH : Host=192.168.1.2 Dest=192.168.1.52 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:00.822  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:36:00.922  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:01.126  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:36:01.226  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:01.576  WEBH : Host=192.168.1.11 Dest=192.168.1.2 Uri=/json.htm?type= command& param= getlog& lastlogtime= 1516350956& loglevel= 2
+Jan 19, 2018 09:36:01.676  WEBH : Host=192.168.1.2 Dest=192.168.1.11 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:02.336  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:36:02.436  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:02.456  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:36:02.556  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:02.767  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:36:02.867  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:03.963  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:36:04.063  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:06.598  WEBH : Host=192.168.1.11 Dest=192.168.1.2 Uri=/json.htm?type= command& param= getlog& lastlogtime= 1516350961& loglevel= 2
+Jan 19, 2018 09:36:06.698  WEBH : Host=192.168.1.2 Dest=192.168.1.11 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:07.813  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:36:07.913  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:08.113  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:36:08.213  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:09.337  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:36:09.417  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:09.427  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:36:09.527  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:09.727  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:36:09.827  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:10.921  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:36:11.021  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:11.625  WEBH : Host=192.168.1.11 Dest=192.168.1.2 Uri=/json.htm?type= command& param= getlog& lastlogtime= 1516350966& loglevel= 2
+Jan 19, 2018 09:36:11.725  WEBH : Host=192.168.1.2 Dest=192.168.1.11 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:14.595  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:36:14.695  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:14.941  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:36:15.041  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:16.015  WEBH : Host=192.168.1.21 Dest=192.168.1.2 Uri=/json.htm?type= command& param= udevice& idx= 115& svalue= 16.50:15.00:0
+Jan 19, 2018 09:36:16.115  WEBH : Host=192.168.1.2 Dest=192.168.1.21 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:16.129  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:36:16.229  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:16.304  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:36:16.404  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:16.603  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:36:16.703  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:16.934  WEBH : Host=192.168.1.11 Dest=192.168.1.2 Uri=/json.htm?type= command& param= getlog& lastlogtime= 1516350971& loglevel= 2
+Jan 19, 2018 09:36:17.034  WEBH : Host=192.168.1.2 Dest=192.168.1.11 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:17.786  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:36:17.886  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:21.461  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:36:21.561  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:21.761  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:36:21.861  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:22.093  WEBH : Host=192.168.1.11 Dest=192.168.1.2 Uri=/json.htm?type= command& param= getlog& lastlogtime= 1516350976& loglevel= 2
+Jan 19, 2018 09:36:22.193  WEBH : Host=192.168.1.2 Dest=192.168.1.11 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:22.943  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:36:23.043  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:23.116  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:36:23.216  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:23.415  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:36:23.515  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:23.894  WEBH : Host=192.168.1.7 Dest=192.168.1.2 Uri=/json.htm?type= command& param= udevice& idx= 558& svalue= 1306.67
+Jan 19, 2018 09:36:23.994  WEBH : Host=192.168.1.2 Dest=192.168.1.7 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:24.669  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:36:24.769  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:25.577  WEBH : Host=192.168.1.52 Dest=192.168.1.2 Uri=/json.htm?type= command& param= switchlight& idx= 3848& switchcmd= On
+Jan 19, 2018 09:36:25.677  WEBH : Host=192.168.1.2 Dest=192.168.1.52 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:27.117  WEBH : Host=192.168.1.11 Dest=192.168.1.2 Uri=/json.htm?type= command& param= getlog& lastlogtime= 1516350982& loglevel= 2
+Jan 19, 2018 09:36:27.131  WEBH : Host=192.168.1.22 Dest=192.168.1.2 Uri=/json.htm?type= command& param= udevice& idx= 1922& svalue= 19.80:46.60:0
+Jan 19, 2018 09:36:27.217  WEBH : Host=192.168.1.2 Dest=192.168.1.11 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:27.231  WEBH : Host=192.168.1.2 Dest=192.168.1.22 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:28.192  WEBH : Host=192.168.1.52 Dest=192.168.1.2 Uri=/json.htm?type= command& param= switchlight& idx= 3848& switchcmd= Off
+Jan 19, 2018 09:36:28.292  WEBH : Host=192.168.1.2 Dest=192.168.1.52 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:28.450  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:36:28.550  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:28.768  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:36:28.868  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:29.953  WEBH : Host=192.168.1.53 Dest=192.168.1.2 Uri=/json.htm?type= command& param= switchlight& idx= 3845& switchcmd= On
+Jan 19, 2018 09:36:30.053  WEBH : Host=192.168.1.2 Dest=192.168.1.53 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:30.018  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:36:30.068  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:30.089  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:36:30.189  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:30.402  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:36:30.502  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:31.618  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:36:31.718  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:32.235  WEBH : Host=192.168.1.11 Dest=192.168.1.2 Uri=/json.htm?type= command& param= getlog& lastlogtime= 1516350987& loglevel= 2
+Jan 19, 2018 09:36:32.335  WEBH : Host=192.168.1.2 Dest=192.168.1.11 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:32.361  WEBH : Host=192.168.1.53 Dest=192.168.1.2 Uri=/json.htm?type= command& param= switchlight& idx= 3845& switchcmd= Off
+Jan 19, 2018 09:36:32.461  WEBH : Host=192.168.1.2 Dest=192.168.1.53 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:33.945  WEBH : Host=192.168.1.51 Dest=192.168.1.2 Uri=/json.htm?type= command& param= switchlight& idx= 0& switchcmd= On
+Jan 19, 2018 09:36:34.045  WEBH : Host=192.168.1.2 Dest=192.168.1.51 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:35.253  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:36:35.353  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:35.636  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:36:35.736  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:36.369  WEBH : Host=192.168.1.51 Dest=192.168.1.2 Uri=/json.htm?type= command& param= switchlight& idx= 0& switchcmd= Off
+Jan 19, 2018 09:36:36.469  WEBH : Host=192.168.1.2 Dest=192.168.1.51 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:36.839  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:36:36.939  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:36.970  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:36:37.070  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:37.285  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:36:37.385  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:37.641  WEBH : Host=192.168.1.11 Dest=192.168.1.2 Uri=/json.htm?type= command& param= getlog& lastlogtime= 1516350992& loglevel= 2
+Jan 19, 2018 09:36:37.741  WEBH : Host=192.168.1.2 Dest=192.168.1.11 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:38.507  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:36:38.607  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:39.314  WEBH : Host=192.168.1.53 Dest=192.168.1.2 Uri=/json.htm?type= command& param= udevice& idx= 3846& svalue= 18.10:26.60:2
+Jan 19, 2018 09:36:39.414  WEBH : Host=192.168.1.2 Dest=192.168.1.53 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:40.500  WEBH : Host=192.168.1.53 Dest=192.168.1.2 Uri=/json.htm?type= command& param= switchlight& idx= 3845& switchcmd= On
+Jan 19, 2018 09:36:40.600  WEBH : Host=192.168.1.2 Dest=192.168.1.53 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:42.110  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:36:42.210  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:42.428  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:36:42.528  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:42.774  WEBH : Host=192.168.1.11 Dest=192.168.1.2 Uri=/json.htm?type= command& param= getlog& lastlogtime= 1516350997& loglevel= 2
+Jan 19, 2018 09:36:42.874  WEBH : Host=192.168.1.2 Dest=192.168.1.11 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:42.908  WEBH : Host=192.168.1.53 Dest=192.168.1.2 Uri=/json.htm?type= command& param= switchlight& idx= 3845& switchcmd= Off
+Jan 19, 2018 09:36:43.008  WEBH : Host=192.168.1.2 Dest=192.168.1.53 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:43.631  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:36:43.731  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:43.981  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:36:44.081  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:44.298  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:36:44.398  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:45.537  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:36:45.637  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:47.612  WEBH : Host=192.168.1.23 Dest=192.168.1.2 Uri=/json.htm?type= command& param= udevice& idx= 1923& svalue= 17.70:49.20:0
+Jan 19, 2018 09:36:47.712  WEBH : Host=192.168.1.2 Dest=192.168.1.23 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:47.808  WEBH : Host=192.168.1.11 Dest=192.168.1.2 Uri=/json.htm?type= command& param= getlog& lastlogtime= 1516351002& loglevel= 2
+Jan 19, 2018 09:36:47.908  WEBH : Host=192.168.1.2 Dest=192.168.1.11 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:49.125  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:36:49.225  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:49.490  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:36:49.590  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:49.911  WEBH : Host=192.168.1.52 Dest=192.168.1.2 Uri=/json.htm?type= command& param= udevice& idx= 3847& svalue= 18.80:24.80:2
+Jan 19, 2018 09:36:50.011  WEBH : Host=192.168.1.2 Dest=192.168.1.52 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:50.692  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:36:50.792  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:50.869  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= utility& order= Name
+Jan 19, 2018 09:36:50.969  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:51.181  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= devices& filter= all& used= true& order= Name
+Jan 19, 2018 09:36:51.281  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)
+Jan 19, 2018 09:36:52.386  WEBH : Host=192.168.1.2 Dest=192.168.1.11 Uri=/json.htm?type= cameras& rid= 
+Jan 19, 2018 09:36:52.486  WEBH : Host=192.168.1.11 Dest=192.168.1.2 HTTP/1.1 status=200 response=OK  (application/json)

@@ -1,0 +1,2 @@
+?/json.htm(Host=192.168.1.2;Dest=192.168.1.11;Uri=/json.htm;type= devices; filter= all; used= true; order= Name)
+!response(Host=192.168.1.11;Dest=192.168.1.2;status=200;response=OK)

@@ -1,0 +1,18 @@
+digraph LTS {
+S00[shape=point]
+S1[label=S1,shape=circle];
+S2[label=S2,shape=circle];
+S3[label=S3,shape=circle];
+S4[label=S4,shape=circle];
+S5[label=S5,shape=circle];
+S00 -> S1
+S1 -> S2[label ="?/json.htm(Host=192.168.1.2;Dest=192.168.1.11;Uri=/json.htm;type= devices; filter= utility; order= Name)"];
+S1 -> S2[label ="?/json.htm(Host=192.168.1.2;Dest=192.168.1.11;Uri=/json.htm;type= cameras; rid= )"];
+S1 -> S2[label ="?/json.htm(Host=192.168.1.2;Dest=192.168.1.11;Uri=/json.htm;type= devices; filter= all; used= true; order= Name)"];
+S1 -> S3[label ="!/json.htm(Host=192.168.1.11;Dest=192.168.1.2;Uri=/json.htm;type= command; param= getlog; loglevel= 2)"];
+S1 -> S4[label ="!/json.htm(Host=192.168.1.11;Dest=192.168.1.2;Uri=/json.htm;type= command; param= getlog; loglevel= 2)"];
+S2 -> S1[label ="!response(Host=192.168.1.11;Dest=192.168.1.2;status=200;response=OK)"];
+S3 -> S1[label ="?response(Host=192.168.1.2;Dest=192.168.1.11;status=200;response=OK)"];
+S4 -> S5[label ="?response(Host=192.168.1.2;Dest=192.168.1.11;status=200;response=OK)"];
+S5 -> S2[label ="?/json.htm(Host=192.168.1.2;Dest=192.168.1.11;Uri=/json.htm;type= devices; filter= utility; order= Name)"];
+}

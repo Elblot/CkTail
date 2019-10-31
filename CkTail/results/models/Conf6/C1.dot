@@ -1,0 +1,39 @@
+digraph LTS {
+S00[shape=point]
+S1[label=S1,shape=circle];
+S2[label=S2,shape=circle];
+S3[label=S3,shape=circle];
+S4[label=S4,shape=circle];
+S5[label=S5,shape=circle];
+S6[label=S6,shape=circle];
+S7[label=S7,shape=circle];
+S8[label=S8,shape=circle];
+S9[label=S9,shape=circle];
+S10[label=S10,shape=circle];
+S11[label=S11,shape=circle];
+S00 -> S1
+S1 -> S2[label ="?/json.htm(Host=192.168.43.101;Dest=192.168.43.76;Verb=GET;Uri=/json.htm;type=command;param=udevice;idx=1;nvalue;svalue=25.00:44.00:1;rssi)"];
+S1 -> S2[label ="?/json.htm(Host=192.168.43.101;Dest=192.168.43.76;Verb=GET;Uri=/json.htm;type=command;param=switchlight;idx=2;command=Off;rssi)"];
+S1 -> S2[label ="?/json.htm(Host=192.168.43.101;Dest=192.168.43.76;Verb=GET;Uri=/json.htm;type=command;param=switchlight;idx=2;command=On;rssi)"];
+S1 -> S2[label ="?/json.htm(Host=192.168.43.101;Dest=192.168.43.76;Verb=GET;Uri=/json.htm;type=command;param=udevice;idx=1;nvalue;svalue=25.00:45.00:1;rssi)"];
+S1 -> S3[label ="?/json.htm(Host=192.168.43.101;Dest=192.168.43.76;Verb=GET;Uri=/json.htm;type=command;param=switchlight;idx=2;command=Off;rssi)"];
+S1 -> S3[label ="?/json.htm(Host=192.168.43.101;Dest=192.168.43.76;Verb=GET;Uri=/json.htm;type=command;param=switchlight;idx=2;command=On;rssi)"];
+S1 -> S5[label ="!command(Host=192.168.43.76;Dest=192.168.43.203;data=0401000000;group=02;command=On)"];
+S1 -> S5[label ="!command(Host=192.168.43.76;Dest=192.168.43.203;data=0402000000;group=02;command=Off)"];
+S1 -> S6[label ="?/json.htm(Host=192.168.43.102;Dest=192.168.43.76;Verb=GET;Uri=/json.htm;type=command;param=switchlight;idx=10;command=On;rssi)"];
+S1 -> S6[label ="?/json.htm(Host=192.168.43.102;Dest=192.168.43.76;Verb=GET;Uri=/json.htm;type=command;param=switchlight;idx=10;command=Off;rssi)"];
+S1 -> S7[label ="?/json.htm(Host=192.168.43.102;Dest=192.168.43.76;Verb=GET;Uri=/json.htm;type=command;param=switchlight;idx=10;command=On;rssi)"];
+S1 -> S7[label ="?/json.htm(Host=192.168.43.102;Dest=192.168.43.76;Verb=GET;Uri=/json.htm;type=command;param=switchlight;idx=10;command=Off;rssi)"];
+S1 -> S8[label ="?/json.htm(Host=192.168.43.102;Dest=192.168.43.76;Verb=GET;Uri=/json.htm;type=command;param=switchlight;idx=10;command=On;rssi)"];
+S2 -> S1[label ="!OK(Host=192.168.43.76;Dest=192.168.43.101;status=200;response=OK)"];
+S3 -> S4[label ="!OK(Host=192.168.43.76;Dest=192.168.43.101;status=200;response=OK)"];
+S3 -> S10[label ="!OK(Host=192.168.43.76;Dest=192.168.43.101;status=200;response=OK)"];
+S4 -> S5[label ="!command(Host=192.168.43.76;Dest=192.168.43.203;data=0401000000;group=02;command=On)"];
+S5 -> S1[label ="?response(Host=192.168.43.203;Dest=192.168.43.76;status=0300;response=00)"];
+S6 -> S4[label ="!OK(Host=192.168.43.76;Dest=192.168.43.102;status=200;response=OK)"];
+S7 -> S1[label ="!OK(Host=192.168.43.76;Dest=192.168.43.102;status=200;response=OK)"];
+S8 -> S9[label ="!OK(Host=192.168.43.76;Dest=192.168.43.102;status=200;response=OK)"];
+S9 -> S5[label ="!command(Host=192.168.43.76;Dest=192.168.43.203;data=0402000000;group=02;command=Off)"];
+S10 -> S11[label ="!command(Host=192.168.43.76;Dest=192.168.43.203;data=0401000000;group=02;command=On)"];
+S11 -> S1[label ="?response(Host=192.168.43.203;Dest=192.168.43.76;status=0300;response=01)"];
+}

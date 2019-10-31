@@ -1,0 +1,28 @@
+digraph LTS {
+S00[shape=point]
+S1[label=S1,shape=circle];
+S2[label=S2,shape=circle];
+S3[label=S3,shape=circle];
+S4[label=S4,shape=circle];
+S5[label=S5,shape=circle];
+S6[label=S6,shape=circle];
+S7[label=S7,shape=circle];
+S8[label=S8,shape=circle];
+S9[label=S9,shape=circle];
+S10[label=S10,shape=circle];
+S00 -> S1
+S1 -> S2[label ="?command(Host=192.168.43.76;Dest=192.168.43.201;data=0401000000;group=02;command=On)"];
+S1 -> S5[label ="?command(Host=192.168.43.76;Dest=192.168.43.201;data=0402000000;group=02;command=Off)"];
+S1 -> S7[label ="?command(Host=192.168.43.76;Dest=192.168.43.201;data=0401000000;group=02;command=On)"];
+S1 -> S8[label ="?command(Host=192.168.43.76;Dest=192.168.43.201;data=0402000000;group=02;command=Off)"];
+S2 -> S3[label ="!command(Host=192.168.43.201;Dest=192.168.43.202;data=0401000000;group=02;command=On)"];
+S3 -> S4[label ="?response(Host=192.168.43.202;Dest=192.168.43.201;status=0300;response=00)"];
+S4 -> S1[label ="!response(Host=192.168.43.201;Dest=192.168.43.76;status=0300;response=00)"];
+S5 -> S6[label ="!command(Host=192.168.43.201;Dest=192.168.43.203;data=0402000000;group=02;command=Off)"];
+S6 -> S4[label ="?response(Host=192.168.43.203;Dest=192.168.43.201;status=0300;response=00)"];
+S6 -> S9[label ="?response(Host=192.168.43.203;Dest=192.168.43.201;status=0300;response=00)"];
+S7 -> S6[label ="!command(Host=192.168.43.201;Dest=192.168.43.203;data=0401000000;group=02;command=On)"];
+S8 -> S3[label ="!command(Host=192.168.43.201;Dest=192.168.43.202;data=0402000000;group=02;command=Off)"];
+S9 -> S10[label ="!response(Host=192.168.43.201;Dest=192.168.43.76;status=0300;response=00)"];
+S10 -> S2[label ="?command(Host=192.168.43.76;Dest=192.168.43.201;data=0401000000;group=02;command=On)"];
+}

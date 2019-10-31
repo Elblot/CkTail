@@ -1,0 +1,2 @@
+!command(Host=192.168.43.76;Dest=192.168.43.201;data=0401000000;group=02;command=On)
+?response(Host=192.168.43.201;Dest=192.168.43.76;status=0300;response=00)

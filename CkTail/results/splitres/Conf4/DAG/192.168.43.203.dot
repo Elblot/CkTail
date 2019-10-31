@@ -1,0 +1,10 @@
+digraph LTS {
+S00[shape=point]
+S0[label="192.168.43.76",shape=circle];
+S1[label="192.168.43.102",shape=circle];
+S2[label="192.168.43.201",shape=circle];
+S3[label="192.168.43.101",shape=circle];
+S4[label="192.168.43.203",shape=circle];
+S5[label="192.168.43.202",shape=circle];
+S00 -> S4
+}
