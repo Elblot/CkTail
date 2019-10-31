@@ -69,4 +69,4 @@ Other options:
 ## TODO
  - [ ] allow the user to define how to identify *Requests* and *Responses* 
  - [ ] allow user to define where the traces and dependecy graph are written when you run nthe complete method
- 
+ - [ ] fix generation of the dependency graphs
