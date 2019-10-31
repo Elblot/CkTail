@@ -1,0 +1,8 @@
+message(Host=0;Dest=1;bit=0)
+response(Host=1;Dest=0;bit=0;response=OK)
+message(Host=0;Dest=1;bit=1)
+response(Host=1;Dest=0;bit=1;response=Ok)
+message(Host=0;Dest=1;bit=0)
+response(Host=1;Dest=0;bit=0;response=OK)
+message(Host=0;Dest=1;bit=1)
+response(Host=1;Dest=0;bit=1;response=Ok)
