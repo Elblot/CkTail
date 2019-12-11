@@ -13,9 +13,16 @@ public class DAG {
 	public HashSet<String[]> transitions;
 
 	public DAG() {
-		
-		nodes = new ArrayList<String>();
 		transitions = new HashSet<String[]>();
+	}
+	
+	public void makeNodes() {
+		nodes = new ArrayList<String>();
+		for (String[] trans: transitions) {
+			for (String node: trans) {
+				nodes.add(node);
+			}
+		}
 	}
 
 	public void addNode(String node) {
@@ -53,15 +60,17 @@ public class DAG {
 			File dot = new File(filename);
 			BufferedWriter bw;
 			bw = new BufferedWriter(new FileWriter(dot, true));
-			bw.write("digraph LTS {\n" + 
-					"S00[shape=point]\n");
+			//Set<String> nodes = new HashSet<String>();
+			bw.write("digraph LTS {\n");
 			for (String compo: nodes) {
-				bw.write("S" + nodes.indexOf(compo) +"[label=\"" + compo + "\",shape=circle];\n");
 				if (filename.contains("/DAG/" + compo + ".dot")){
 					comp = compo;
+					bw.write("S" + nodes.indexOf(compo) +"[label=\"" + compo + "\",fillcolor=grey,style=filled];\n");
+				}
+				else {
+					bw.write("S" + nodes.indexOf(compo) +"[label=\"" + compo + "\"];\n");
 				}
 			}
-			bw.write("S00 -> S" + nodes.indexOf(comp) + "\n");
 			for (String[] trans: transitions) {
 				bw.write("S"+ nodes.indexOf(trans[0]) + " -> S" + nodes.indexOf(trans[1]) + "\n");
 			}

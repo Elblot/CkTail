@@ -83,7 +83,7 @@ public class Dependency {
 		folder.mkdir();
 		for (String comp: components) {
 			DAG dag = new DAG();
-			dag.addNodes(components);
+			//dag.addNodes(components);
 			for (ArrayList<String> dep : Dep) {
 				for (int i = 0; i < dep.size(); i++) {
 					if (comp.equals(dep.get(i))) {
@@ -94,6 +94,7 @@ public class Dependency {
 					}
 				}
 			}
+			dag.makeNodes();
 			dag.dotGen(output + "/DAG/" + comp + ".dot");
 		}
 	}

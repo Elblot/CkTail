@@ -9,6 +9,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -51,19 +53,20 @@ public class MainGen {
 		//3rd part : synchronization : KTail
 		final long timeKTail1 = System.currentTimeMillis();
 		KTail instance = new KTail(rank);
-		int i = 1;
+		//int i = 1;
 		for (ArrayList<Trace> traces : alTraces) {
 			FSA test = instance.transform(traces);
-	    	GenerateDOT.printDot(test, MainGen.dest+"/C"+i+"tmp.dot");
-	    	i++;
+			String i = getId(traces);
+	    	GenerateDOT.printDot(test, MainGen.dest+"/"+i+"tmp.dot"); //TODO remplacer i par le nom du compo
+	    	//i++;
 		}
 		final long timeKTail2 = System.currentTimeMillis();
 		
 		//4th part : parser
 		final long timePars1 = System.currentTimeMillis();
 		
-		int j;
-		Pattern pat = Pattern.compile(".*C\\d+tmp.dot");
+		String j;
+		Pattern pat = Pattern.compile(".*/[^/]+tmp.dot");
 		File dossier = new File(MainGen.dest);
 		if (!dossier.exists()) {
 		}
@@ -72,9 +75,9 @@ public class MainGen {
 			String dotStr = dot.toString();
 			Matcher m = pat.matcher(dotStr);
 			if(m.matches()) {
-				j = Integer.parseInt(dotStr.substring(MainGen.dest.length()+2, dotStr.length()-7));
+				j = dotStr.substring(MainGen.dest.length()+2, dotStr.length()-7);
 				ParserDot parser = new ParserDot(j);
-				String fileName = parser.parser(dot);
+				String fileName = parser.parser(dot);//WTF ????
 				GraphExporter.generatePngFileFromDotFile(fileName);
 				if(!tmp) {
 					dot.delete();
@@ -102,6 +105,34 @@ public class MainGen {
 				+ (timePars2 - timePars1) + " ms\n"+ "Program Duration: " + (timeProg2 - timeProg1) + " ms\n");
 			br.close();
 		}
+	}
+	
+	//TODO
+	private static String getId(ArrayList<Trace> traces) {
+		Trace t = traces.get(0);
+		String event = t.getStatement(0).toString();
+		//System.out.println(event);
+		if (event.startsWith("!")) {
+			int h = event.indexOf("Host=");
+			if (h != -1) {
+				return event.substring(h + 5, event.indexOf(";", h + 5));
+				/* 5 is the length of "Host=" */
+			}
+		}
+		else if (event.startsWith("?")) {
+			int d = event.indexOf("Dest=");
+			if (d != -1) {
+				if (event.indexOf(";", d+5) > d) {
+					return event.substring(d + 5, event.indexOf(";", d + 5));
+				}
+				else {
+					return event.substring(d + 5, event.indexOf(")", d + 5));
+				}
+			}
+		}
+		return t.toString();
+
+		
 	}
 	
 	private static void sortFile() throws IOException {

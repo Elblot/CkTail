@@ -15,11 +15,12 @@ import java.util.TreeSet;
 
 public class ParserDot {
 
-	int j, nbEtat = 0, nbTransition = 0;
+	String j;
+	int nbEtat = 0, nbTransition = 0;
 	static int nbEtatTot, nbTransitionTot;
 
 	
-	public ParserDot(int j) {
+	public ParserDot(String j) {
 		this.j = j;
 	}
 	
@@ -138,7 +139,7 @@ public class ParserDot {
 			}
 		}
 		
-		String fileName = MainGen.dest+"/C"+j+".dot";
+		String fileName = MainGen.dest+"/"+j+".dot";
 		File file = new File(fileName);
 		BufferedWriter bw = new BufferedWriter(new FileWriter(file));
 		bw.write(atrier[0]+"\n");
@@ -202,7 +203,7 @@ public class ParserDot {
 			System.exit(1);
 		}
 		BufferedWriter bw = new BufferedWriter(new FileWriter(f, true));
-		bw.write("C"+j+".dot contient :\n"+this.nbEtat+" �tats\n"+this.nbTransition+" transitions\n\n");
+		bw.write(j+".dot contient :\n"+this.nbEtat+" �tats\n"+this.nbTransition+" transitions\n\n");
 		bw.close();
 	}
 	
