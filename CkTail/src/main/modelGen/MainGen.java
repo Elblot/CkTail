@@ -75,7 +75,7 @@ public class MainGen {
 			String dotStr = dot.toString();
 			Matcher m = pat.matcher(dotStr);
 			if(m.matches()) {
-				j = dotStr.substring(MainGen.dest.length()+2, dotStr.length()-7);
+				j = dotStr.substring(MainGen.dest.length()+1, dotStr.length()-7);
 				ParserDot parser = new ParserDot(j);
 				String fileName = parser.parser(dot);//WTF ????
 				GraphExporter.generatePngFileFromDotFile(fileName);
