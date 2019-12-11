@@ -61,7 +61,7 @@ public class DAG {
 			BufferedWriter bw;
 			bw = new BufferedWriter(new FileWriter(dot, true));
 			//Set<String> nodes = new HashSet<String>();
-			bw.write("digraph LTS {\n");
+			bw.write("digraph DAG {\n");
 			for (String compo: nodes) {
 				if (filename.contains("/DAG/" + compo + ".dot")){
 					comp = compo;
