@@ -84,7 +84,7 @@ public class Event {
 		String res = label + "(";
 		//res = res + "date=" + date + ";";//for debug only
 		for (String param: params) {
-			res = res + param + ";";
+			res = res + param + "|||";
 		}
 		res = res.substring(0, res.length()-1);
 		res = res +")";

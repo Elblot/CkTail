@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class Extract {
 
 	private static ArrayList<String> identifiers = new ArrayList<String>();
-
+	private static String separator = "|||";
 
 	//Build the new traces corresponding of the components
 	public static String analysis(String[] traces){
@@ -71,7 +71,7 @@ public class Extract {
 		String Host = "????";
 		int h = sequence.indexOf("Host=");
 		if (h != -1) { //TODO else throw exception
-			Host = sequence.substring(h + 5, sequence.indexOf(";", h+5));
+			Host = sequence.substring(h + 5, sequence.indexOf(separator, h+5));
 		}
 		return Host;
 	}
@@ -81,8 +81,8 @@ public class Extract {
 		String Dest = "????";
 		int h = sequence.indexOf("Dest=");
 		if (h != -1) { //TODO else throw exception
-			if (sequence.indexOf(";", h+5) > h) {
-				Dest = sequence.substring(h + 5, sequence.indexOf(";", h+5));
+			if (sequence.indexOf(separator, h+5) > h) {
+				Dest = sequence.substring(h + 5, sequence.indexOf(separator, h+5));
 			}
 			else {
 				Dest = sequence.substring(h + 5, sequence.indexOf(")", h+5));

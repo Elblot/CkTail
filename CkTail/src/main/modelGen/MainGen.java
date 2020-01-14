@@ -29,6 +29,7 @@ public class MainGen {
 	static boolean timerMode;
 	static boolean tmp;
 	static String dest;
+	private static String separator = "|||";
 	
 	//main entry of the program 
 	public static void main(String[] args) throws Exception {
@@ -115,15 +116,15 @@ public class MainGen {
 		if (event.startsWith("!")) {
 			int h = event.indexOf("Host=");
 			if (h != -1) {
-				return event.substring(h + 5, event.indexOf(";", h + 5));
+				return event.substring(h + 5, event.indexOf(separator, h + 5));
 				/* 5 is the length of "Host=" */
 			}
 		}
 		else if (event.startsWith("?")) {
 			int d = event.indexOf("Dest=");
 			if (d != -1) {
-				if (event.indexOf(";", d+5) > d) {
-					return event.substring(d + 5, event.indexOf(";", d + 5));
+				if (event.indexOf(separator, d+5) > d) {
+					return event.substring(d + 5, event.indexOf(separator, d + 5));
 				}
 				else {
 					return event.substring(d + 5, event.indexOf(")", d + 5));

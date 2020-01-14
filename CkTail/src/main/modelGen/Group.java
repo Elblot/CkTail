@@ -17,7 +17,7 @@ public class Group {
 	String s;
 	int sizeTracei;
 	int[] component;
-
+	private static String separator = "|||";
 
 	public Group(String s) {
 		this.s = s;
@@ -73,15 +73,15 @@ public class Group {
 		if (event.startsWith("!")) {
 			int h = event.indexOf("Host=");
 			if (h != -1) {
-				ID = event.substring(h + 5, event.indexOf(";", h + 5));
+				ID = event.substring(h + 5, event.indexOf(separator, h + 5));
 				/* 5 is the length of "Host=" */
 			}
 		}
 		else if (event.startsWith("?")) {
 			int d = event.indexOf("Dest=");
 			if (d != -1) {
-				if (event.indexOf(";", d+5) > d) {
-					ID = event.substring(d + 5, event.indexOf(";", d + 5));
+				if (event.indexOf(separator, d+5) > d) {
+					ID = event.substring(d + 5, event.indexOf(separator, d + 5));
 				}
 				else {
 					ID = event.substring(d + 5, event.indexOf(")", d + 5));

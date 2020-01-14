@@ -81,6 +81,7 @@ public class MainSplit {
 		int i = 1;
 		Event aj = trace.getEvent(i - 1);
 		while(!aj.isReq()) {
+			System.out.println("not a req: " + aj.debug());
 			i++;
 			if (i >= trace.size()) {
 				return T;

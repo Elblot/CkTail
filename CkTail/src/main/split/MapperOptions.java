@@ -13,9 +13,9 @@ public class MapperOptions {
 	    final CommandLineParser parser = new DefaultParser();
 	    try {
 		    final CommandLine line = parser.parse(options, args);
-		    	    	
+		    
 		    MainSplit.log = line.getOptionValue("input");
-		    MainSplit.regex = new Regex(line.getOptionValue("reg"));	 
+		    MainSplit.regex = new Regex(line.getOptionValue("reg"));	
 		    MainSplit.output = line.getOptionValue("output");
 		    
 		    

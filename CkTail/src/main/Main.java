@@ -10,14 +10,12 @@ public class Main {
 	static boolean timerMode;
 	
 	public static void main(String[] args) {
-		System.out.println(args[0]);
 		try {
 			FullOptions.setOptions(args);
 		} catch (Exception e) {
 			System.err.println("pb option");
 			System.exit(3);
 		}
-		
 		File dir = new File("tmp");
 		dir.mkdir();
 		int i = 1;
