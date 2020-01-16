@@ -15,6 +15,7 @@ public class Event {
 	public static String to = "Dest";
 	
 	private String label;
+	private String separator = "|||";
 	private ArrayList<String> params;
 	public String date;  //public for debug only
 	
@@ -84,9 +85,9 @@ public class Event {
 		String res = label + "(";
 		//res = res + "date=" + date + ";";//for debug only
 		for (String param: params) {
-			res = res + param + "|||";
+			res = res + param + separator;
 		}
-		res = res.substring(0, res.length()-1);
+		res = res.substring(0, res.length()- separator.length());
 		res = res +")";
 		return res;
 	}

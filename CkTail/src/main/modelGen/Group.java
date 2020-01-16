@@ -169,7 +169,7 @@ public class Group {
 			String line = br.readLine();
 			while (line != null) {
 				//System.out.println(line);
-				if (line.contains("call")) {
+				/*if (line.contains("call")) {
 					String str = line.substring(line.indexOf("T")+1);
 					i = Integer.parseInt(str);
 					line = "call_C"+i;
@@ -178,7 +178,7 @@ public class Group {
 					String str = line.substring(line.indexOf("T")+1);
 					i = Integer.parseInt(str);
 					line = "return_C"+i;	
-				}
+				}*/
 				Method m = new Method(line);
 				Statement st = new Statement(m);
 				trace.add(st);
