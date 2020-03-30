@@ -40,7 +40,9 @@ public class ParserDot {
 			e1.printStackTrace();
 		}
 		String strEntier = nettoie(arStrAvecDoublon);
+		//System.out.println(strEntier);
 		ArrayList<Integer> listInt = spliter(strEntier);
+		System.out.println(listInt);
 		Set<Integer> sInt = new TreeSet<Integer>();
 		sInt.addAll(listInt);
 		ArrayList<Integer> finalInt = new ArrayList<Integer>(sInt);
@@ -93,6 +95,35 @@ public class ParserDot {
 	
 	
 	//obtain state numbers in an ArrayList
+		public ArrayList<Integer> spliter(String str) {
+			String[] splited = str.split("\n");
+			ArrayList<Integer> listInt = new ArrayList<Integer>();		
+			for(String line :splited) {
+				if (line.startsWith("S")){
+					if (line.contains(" -> ")) {
+						String src = line.substring(1, line.indexOf(" -> "));
+						listInt.add(Integer.parseInt(src));
+						if (line.contains("[")) {
+							String dest = line.substring(line.indexOf(" -> ") + 5, line.indexOf("[label"));
+							listInt.add(Integer.parseInt(dest));
+						}
+						else {
+							String dest = line.substring(line.indexOf(" -> ") + 5);
+							listInt.add(Integer.parseInt(dest));
+						}
+					}
+					else {
+						String node = line.substring(1, line.indexOf("["));
+						listInt.add(Integer.parseInt(node));
+					}
+				}
+			}
+			return listInt;
+		}
+	
+	
+	/**old
+	//obtain state numbers in an ArrayList
 	public ArrayList<Integer> spliter(String str) {
 		String[] splited = str.split("S");
 		ArrayList<Integer> listInt = new ArrayList<Integer>();		
@@ -109,7 +140,7 @@ public class ParserDot {
 			}
 		}
 		return listInt;
-	}
+	}**/
 	
 	
 	//Replace unnatural state names by new ones

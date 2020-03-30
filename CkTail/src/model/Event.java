@@ -118,13 +118,37 @@ public class Event {
 	
 	//only for our cases
 	public boolean isReq() {
-		if (this.toString().contains("esponse")) {
-			return false;
-		}
-		else {
+		if (!this.toString().contains("esponse") & !this.toString().contains("Resp") & !isInter()) {
 			return true;
 		}
+		else {
+			return false;
+		}
 	}
+
+	public boolean isResp() {
+		if (this.toString().contains("esponse") | this.toString().contains("Resp")) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+
+
+	public boolean isInter() {
+		if (!this.toString().contains("Host=") | !this.toString().contains("Dest=")) {
+			return true;
+		}
+		if (getFrom().equals(getTo())) {
+			//System.out.println(this);
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+
 	
 }
 

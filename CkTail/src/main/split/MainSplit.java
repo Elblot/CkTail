@@ -21,7 +21,7 @@ public class MainSplit {
 	public static Trace trace;
 	public static Regex regex;
 	public static Trace logOrigin;
-	public static double fact = 20.0;
+	public static double fact = 10.0;
 
 	public static Dependency Dep;
 
@@ -171,7 +171,7 @@ public class MainSplit {
 					}
 					System.out.println("passed in no cases");
 				}
-				else {
+				else if (aj.isResp()){
 					//case 1
 					for (ArrayList<Event> LReq: SR) {	
 						if(!LReq.isEmpty() && aj.getFrom().equals(LReq.get(LReq.size() - 1).getTo()) &&
@@ -183,6 +183,9 @@ public class MainSplit {
 						}
 					}
 					tprimeprime.addEvent(aj);
+					i++;
+				}
+				else {
 					i++;
 				}
 			}
