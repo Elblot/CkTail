@@ -21,6 +21,7 @@ public class MainSplit {
 	public static Trace trace;
 	public static Regex regex;
 	public static Trace logOrigin;
+	//public static double interval = 2000.0;//in milliseconds 
 	public static double fact = 10.0;
 
 	public static Dependency Dep;
@@ -153,7 +154,7 @@ public class MainSplit {
 							break;
 						}
 						if(c==SR.size()) {
-							if (checkDependencies(tprime, aj) || checkTime(tprime, aj)) {
+							if (checkDependencies(tprime, aj) || checkTime(tprime, aj)) {   //checkTime(tprime.getEvent(0), aj)) {
 								tprime.addEvent(aj);
 								ArrayList<Event> LR = new ArrayList<Event>();
 								LR.add(aj);
@@ -220,6 +221,7 @@ public class MainSplit {
 	}
 
 	public static boolean checkTime(Trace t, Event aj) {
+		//System.out.println(aj.debug());
 		double mean =  getMean(aj.getFrom());
 		Event prec = t.lastReq(aj.getFrom());
 		double diff = aj.getDate(regex).getTime() - prec.getDate(regex).getTime();
@@ -228,6 +230,17 @@ public class MainSplit {
 		}
 		return false;
 	}
+	
+	/*public static boolean checkTime(Event first, Event aj) {
+		double diff = aj.getDate(regex).getTime() - first.getDate(regex).getTime();
+		//System.out.println
+		//System.out.println("last:" + last.getDate(regex) + ", ai:" + aj.getDate(regex) + ", diff:" + diff);
+		if (diff > 0 && diff < interval) { 
+			return true;
+		}
+		return false;
+	}*/
+
 
 	public static boolean checkDependencies(Trace t, Event aj) {
 		ArrayList<Event> chain = new ArrayList<Event>();

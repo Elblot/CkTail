@@ -163,7 +163,7 @@ public class Group {
 			return null;
 		}
 		Trace trace = new Trace();
-		int i = 0;
+		//int i = 0;
 		try {
 			BufferedReader br = new BufferedReader(new FileReader(file));
 			String line = br.readLine();
